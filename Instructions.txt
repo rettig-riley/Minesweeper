@@ -1,0 +1,42 @@
+/**
+ * WHO: @author Delaney Ugelstad
+ * WHEN: December 13, 2017
+ * WHAT: Instructions.txt
+ */
+  
+GOAL: Find all the mines within a field of squares (without clicking on them), and uncover all the squares that do not contain mines. If a mine is clicked, the game is over.
+  
+Before you begin:
+- Choose a level
+     - Easy: creates a 10x10 field with 10 mines
+     - Medium: creates a 15x15 field with 40 mines
+     - Hard: creates a 20x20 field with 60 mines 
+     - Custom: allows you to create your own square board with up to 20 squares on each side. It also allows you to choose the percentage of cells that are filled with mines 
+- Chose the number of players you would like to play the game (see two-player instructions at the bottom) 
+ 
+Instructions:
+- You are presented with a field of squares. Some squares contain mines, others don't. If you click on a square containing a bomb, you lose. 
+  If you manage to click all the other squares without clicking on any bombs, you win. 
+- Clicking a square which doesn't have a bomb reveals the number of neighboring squares containing bombs. Use this information to help you avoid the bombs.
+- To mark a square that you think contains a bomb, right-click on the cell and a 
+  will appear. If you flag a cell that is not a bomb, you lose.
+ 
+Specifics: 
+- A square's neighbors include all squares that it touches including any diagonals
+- To win, you donít need to mark all the bombs, you just have to click on all the squares that donít contain bombs
+- If you click on a square that has no neighboring bombs, all of its neighbors will automatically be clicked on. This can open large areas with one click
+ 
+Features: 
+- The back button takes you to the main menu
+- The new game button restarts a new game of the same difficulty level
+- The "mines left:" label at the bottom tells you how many mines have not yet been flagged
+- The "Player 1:" (and "Player 2:") label(s) at the bottom tell you how many flags each player has flagged so far (only useful for two-player functionality)
+- The "Player 1:" or "Player 2:" label at the top of the board indicates whose turn it is (also only useful for two-player functionality)
+- Timer counts the time it takes to complete the game
+ 
+Two players:
+- Each player takes turns uncovering a cell 
+- At the start of each turn, a player can flag as many cells as they want, but if they flag incorrectly, they lose the game
+- After a player uncovers a cell, their turn is over 
+- A player wins the game if their opponent incorrectly clicks on a cell with a bomb or flags a cell without a bomb
+- If all cells are uncovered, the player with the most flags wins 
